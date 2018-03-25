@@ -1,0 +1,12 @@
+<template>
+  <require from="./child"></require>
+
+  <h1>I am the parent</h1>
+
+  <button class="btn btn-primary" click.delegate="showChild()">Show Child</button>
+
+  <!--<child if.bind="showingChild"></child>-->
+  <compose view-model="./child" if.bind="showingChild"></compose>
+
+
+</template>
